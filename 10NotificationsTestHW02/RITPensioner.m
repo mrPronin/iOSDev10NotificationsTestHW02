@@ -46,7 +46,10 @@
     
     CGFloat incomeChangesPercent = pensionVariationPercent - self.inflation;
     
-    NSLog(@"%@: my pension changed on %6.2f%%, inflation was %6.2f%%, my income changed on %6.2f%%", self.name, pensionVariationPercent, self.inflation, incomeChangesPercent);
+    NSLog(@"%@: my pension changed on %6.2f%%, inflation was %6.2f%%, my income changed on %6.2f%%",
+          self.name, pensionVariationPercent,
+          self.inflation,
+          incomeChangesPercent);
     
     self.pension = pension;
 

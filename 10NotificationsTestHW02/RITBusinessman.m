@@ -46,7 +46,10 @@
     
     CGFloat incomeChangesPercent = self.inflation - taxLevelVariationPercent;
     
-    NSLog(@"%@: tax level changed on %6.2f%%, income changed on %6.2f%%, my profit changed to %6.2f%%", self.name, taxLevelVariationPercent, self.inflation, incomeChangesPercent);
+    NSLog(@"%@: tax level changed on %6.2f%%, income changed on %6.2f%%, my profit changed to %6.2f%%",
+          self.name, taxLevelVariationPercent,
+          self.inflation,
+          incomeChangesPercent);
     
     self.taxLevel = taxLevel;
     

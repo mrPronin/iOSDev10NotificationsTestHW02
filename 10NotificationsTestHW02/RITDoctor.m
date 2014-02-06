@@ -47,7 +47,10 @@
     
     CGFloat incomeChangesPercent = salaryVariationPercent - self.inflation;
     
-    NSLog(@"%@: my salary changed on %6.2f%%, inflation was %6.2f%%, my income changed on %6.2f%%", self.name, salaryVariationPercent, self.inflation, incomeChangesPercent);
+    NSLog(@"%@: my salary changed on %6.2f%%, inflation was %6.2f%%, my income changed on %6.2f%%",
+          self.name, salaryVariationPercent,
+          self.inflation,
+          incomeChangesPercent);
     
     self.salary = salary;
     

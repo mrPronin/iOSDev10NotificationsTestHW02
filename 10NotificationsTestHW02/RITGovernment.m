@@ -34,19 +34,20 @@ NSString* const RITGovernmentAveragePriceUserInfoKey = @"RITGovernmentAveragePri
 
 - (void) setTaxLevel:(CGFloat)taxLevel {
     _taxLevel = taxLevel;
-    
-    NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:taxLevel] forKey:RITGovernmentTaxLevelUserInfoKey];
+    NSDictionary* dictionary = [NSDictionary
+                                dictionaryWithObject:[NSNumber numberWithFloat:taxLevel]
+                                forKey:RITGovernmentTaxLevelUserInfoKey];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:RITGovernmentTaxLevelDidChangeNotification
                                                       object:nil
                                                       userInfo:dictionary];
-    
 }
 
 - (void) setSalary:(CGFloat)salary {
     _salary = salary;
-    
-    NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:salary] forKey:RITGovernmentSalaryUserInfoKey];
+    NSDictionary* dictionary = [NSDictionary
+                                dictionaryWithObject:[NSNumber numberWithFloat:salary]
+                                forKey:RITGovernmentSalaryUserInfoKey];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:RITGovernmentSalaryDidChangeNotification
                                                         object:nil
@@ -55,8 +56,9 @@ NSString* const RITGovernmentAveragePriceUserInfoKey = @"RITGovernmentAveragePri
 
 - (void) setPension:(CGFloat)pension {
     _pension = pension;
-    
-    NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:pension] forKey:RITGovernmentPensionUserInfoKey];
+    NSDictionary* dictionary = [NSDictionary
+                                dictionaryWithObject:[NSNumber numberWithFloat:pension]
+                                forKey:RITGovernmentPensionUserInfoKey];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:RITGovernmentPensionDidChangeNotification
                                                         object:nil
@@ -65,8 +67,9 @@ NSString* const RITGovernmentAveragePriceUserInfoKey = @"RITGovernmentAveragePri
 
 - (void) setAveragePrice:(CGFloat)averagePrice {
     _averagePrice = averagePrice;
-    
-    NSDictionary* dictionary = [NSDictionary dictionaryWithObject:[NSNumber numberWithFloat:averagePrice] forKey:RITGovernmentAveragePriceUserInfoKey];
+    NSDictionary* dictionary = [NSDictionary
+                                dictionaryWithObject:[NSNumber numberWithFloat:averagePrice]
+                                forKey:RITGovernmentAveragePriceUserInfoKey];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:RITGovernmentAveragePriceDidChangeNotification
                                                         object:nil
