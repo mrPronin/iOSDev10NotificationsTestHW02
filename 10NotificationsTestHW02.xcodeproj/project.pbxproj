@@ -19,6 +19,10 @@
 		3EE938F118A3F599009012FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE938D918A3F599009012FD /* UIKit.framework */; };
 		3EE938F918A3F599009012FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EE938F718A3F599009012FD /* InfoPlist.strings */; };
 		3EE938FB18A3F599009012FD /* _0NotificationsTestHW02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE938FA18A3F599009012FD /* _0NotificationsTestHW02Tests.m */; };
+		3EE9390C18A3F5C6009012FD /* RITBusinessman.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9390518A3F5C6009012FD /* RITBusinessman.m */; };
+		3EE9390D18A3F5C6009012FD /* RITPensioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9390718A3F5C6009012FD /* RITPensioner.m */; };
+		3EE9390E18A3F5C6009012FD /* RITDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9390918A3F5C6009012FD /* RITDoctor.m */; };
+		3EE9390F18A3F5C6009012FD /* RITGovernment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9390B18A3F5C6009012FD /* RITGovernment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		3EE938F618A3F599009012FD /* 10NotificationsTestHW02Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "10NotificationsTestHW02Tests-Info.plist"; sourceTree = "<group>"; };
 		3EE938F818A3F599009012FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EE938FA18A3F599009012FD /* _0NotificationsTestHW02Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0NotificationsTestHW02Tests.m; sourceTree = "<group>"; };
+		3EE9390418A3F5C6009012FD /* RITBusinessman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITBusinessman.h; sourceTree = "<group>"; };
+		3EE9390518A3F5C6009012FD /* RITBusinessman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusinessman.m; sourceTree = "<group>"; };
+		3EE9390618A3F5C6009012FD /* RITPensioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITPensioner.h; sourceTree = "<group>"; };
+		3EE9390718A3F5C6009012FD /* RITPensioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITPensioner.m; sourceTree = "<group>"; };
+		3EE9390818A3F5C6009012FD /* RITDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITDoctor.h; sourceTree = "<group>"; };
+		3EE9390918A3F5C6009012FD /* RITDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITDoctor.m; sourceTree = "<group>"; };
+		3EE9390A18A3F5C6009012FD /* RITGovernment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITGovernment.h; sourceTree = "<group>"; };
+		3EE9390B18A3F5C6009012FD /* RITGovernment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITGovernment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,14 @@
 		3EE938DB18A3F599009012FD /* 10NotificationsTestHW02 */ = {
 			isa = PBXGroup;
 			children = (
+				3EE9390418A3F5C6009012FD /* RITBusinessman.h */,
+				3EE9390518A3F5C6009012FD /* RITBusinessman.m */,
+				3EE9390618A3F5C6009012FD /* RITPensioner.h */,
+				3EE9390718A3F5C6009012FD /* RITPensioner.m */,
+				3EE9390818A3F5C6009012FD /* RITDoctor.h */,
+				3EE9390918A3F5C6009012FD /* RITDoctor.m */,
+				3EE9390A18A3F5C6009012FD /* RITGovernment.h */,
+				3EE9390B18A3F5C6009012FD /* RITGovernment.m */,
 				3EE938E418A3F599009012FD /* RITAppDelegate.h */,
 				3EE938E518A3F599009012FD /* RITAppDelegate.m */,
 				3EE938E718A3F599009012FD /* Images.xcassets */,
@@ -241,7 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE938E618A3F599009012FD /* RITAppDelegate.m in Sources */,
+				3EE9390C18A3F5C6009012FD /* RITBusinessman.m in Sources */,
+				3EE9390F18A3F5C6009012FD /* RITGovernment.m in Sources */,
 				3EE938E218A3F599009012FD /* main.m in Sources */,
+				3EE9390E18A3F5C6009012FD /* RITDoctor.m in Sources */,
+				3EE9390D18A3F5C6009012FD /* RITPensioner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
