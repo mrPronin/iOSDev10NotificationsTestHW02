@@ -27,7 +27,7 @@ NSString* const RITGovernmentAveragePriceUserInfoKey = @"RITGovernmentAveragePri
         _taxLevel = 5.f;
         _salary = 1000;
         _pension = 500;
-        _averagePrice = 10.f;
+        _averagePrice = 14.f;
     }
     return self;
 }

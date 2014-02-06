@@ -42,11 +42,13 @@
     
     CGFloat taxLevel = [notification.userInfo[RITGovernmentTaxLevelUserInfoKey] floatValue];
     
-    CGFloat variationPercent = (self.taxLevel == 0) ? 0 : (taxLevel/self.taxLevel-1)*100;
+    CGFloat taxLevelVariationPercent = (self.taxLevel == 0) ? 0 : (taxLevel/self.taxLevel-1)*100;
+    
+    CGFloat incomeChangesPercent = self.inflation - taxLevelVariationPercent;
+    
+    NSLog(@"%@: tax level changed on %6.2f%%, income changed on %6.2f%%, my profit changed to %6.2f%%", self.name, taxLevelVariationPercent, self.inflation, incomeChangesPercent);
     
     self.taxLevel = taxLevel;
-    
-    NSLog(@"%@: tax level changed on %6.2f", self.name, variationPercent);
     
 }
 
@@ -58,7 +60,9 @@
     
     self.averagePrice = averagePrice;
     
-    NSLog(@"%@: Average price changed on %6.2f", self.name, variationPercent);
+    self.inflation = variationPercent;
+    
+    //NSLog(@"%@: inflation was %6.2f %%", self.name, variationPercent);
     
 }
 

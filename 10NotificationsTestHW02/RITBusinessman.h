@@ -13,5 +13,6 @@
 @property (assign, nonatomic) CGFloat taxLevel;
 @property (assign, nonatomic) CGFloat averagePrice;
 @property (strong, nonatomic) NSString* name;
+@property (assign, nonatomic) CGFloat inflation;
 
 @end

@@ -43,11 +43,13 @@
     
     CGFloat salary = [notification.userInfo[RITGovernmentSalaryUserInfoKey] floatValue];
     
-    CGFloat variationPercent = (self.salary == 0) ? 0 : (salary/self.salary-1)*100;
+    CGFloat salaryVariationPercent = (self.salary == 0) ? 0 : (salary/self.salary-1)*100;
+    
+    CGFloat incomeChangesPercent = salaryVariationPercent - self.inflation;
+    
+    NSLog(@"%@: my salary changed on %6.2f%%, inflation was %6.2f%%, my income changed on %6.2f%%", self.name, salaryVariationPercent, self.inflation, incomeChangesPercent);
     
     self.salary = salary;
-    
-    NSLog(@"%@: My salary changed on %6.2f", self.name, variationPercent);
     
 }
 
@@ -59,7 +61,9 @@
     
     self.averagePrice = averagePrice;
     
-    NSLog(@"%@: Average price changed on %6.2f", self.name, variationPercent);
+    self.inflation = variationPercent;
+    
+    //NSLog(@"%@: inflation was %6.2f %%", self.name, variationPercent);
     
 }
 

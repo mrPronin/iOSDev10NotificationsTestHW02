@@ -42,11 +42,13 @@
     
     CGFloat pension = [notification.userInfo[RITGovernmentPensionUserInfoKey] floatValue];
     
-    CGFloat variationPercent = (self.pension == 0) ? 0 : (pension/self.pension-1)*100;
+    CGFloat pensionVariationPercent = (self.pension == 0) ? 0 : (pension/self.pension-1)*100;
+    
+    CGFloat incomeChangesPercent = pensionVariationPercent - self.inflation;
+    
+    NSLog(@"%@: my pension changed on %6.2f%%, inflation was %6.2f%%, my income changed on %6.2f%%", self.name, pensionVariationPercent, self.inflation, incomeChangesPercent);
     
     self.pension = pension;
-    
-    NSLog(@"%@: My pension changed on %6.2f", self.name, variationPercent);
 
 }
 
@@ -58,7 +60,9 @@
     
     self.averagePrice = averagePrice;
     
-    NSLog(@"%@: Average price changed on %6.2f", self.name, variationPercent);
+    self.inflation = variationPercent;
+    
+    //NSLog(@"%@: inflation was %6.2f %%", self.name, variationPercent);
     
 }
 
